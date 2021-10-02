@@ -109,6 +109,19 @@ export default function MarketTrade() {
         }
     }, [tokenA, bscContext.currentAccountAddress])
 
+    useEffect(async () => {
+        const feeNames = ["_liquidityFee", "_taxFee", "_charityFee", "_marketingAndDevFee", "_redistributionFee"]
+        var recommendedSlippage = 0;
+        if (tokenA.address != "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c") {
+            for (const method in tokenAContract.methods) {
+                if (feeNames.indexOf(method) !== -1) { // Check if method is a fee method 
+                    recommendedSlippage += await tokenAContracts.methods.method().call()
+                }
+
+            }
+        }
+    }, []) // set the recommended slippate value
+
     // useEffect(async () => {
     //     if (bscContext.currentAccountAddress) {
     //         const currentTokenABalance = await axios.get('https://api.bscscan.com/api', {
