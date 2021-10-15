@@ -987,12 +987,11 @@
     tiny-warning "^1.0.3"
     tslib "^2.3.0"
 
-"@redq/reuse-modal@^1.1.9":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@redq/reuse-modal/-/reuse-modal-1.2.4.tgz#2bb284bf96cd97e123f04a43033ff826e6bbfc0c"
-  integrity sha512-dkIdg/crU3ieUrOKnwS52MUICnoOPdr9sV65ogjBse9OF3j1FsU8j1ZAWHu0GpDQnySI7MUp6jMqf5WxAhZxMA==
+"@redq/reuse-modal@^1.2.31":
+  version "1.2.31"
+  resolved "https://registry.yarnpkg.com/@redq/reuse-modal/-/reuse-modal-1.2.31.tgz#a08406701f7982bdfad8da3c6e0ae1824c963408"
+  integrity sha512-CXBneiHD7R3el2OlQuNLJxWwS5fRgyerEFqgbdisXctEph9c3sjJIxLA4Rt+FhGvMlduqOzCkcUQpmsl3DxyBA==
   dependencies:
-    react-device-detect "^1.6.2"
     react-rnd "^9.0.4"
     react-spring "^8.0.18"
 
@@ -9998,13 +9997,6 @@ react-countup@^4.3.3:
     prop-types "^15.7.2"
     warning "^4.0.3"
 
-react-device-detect@^1.6.2:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-1.17.0.tgz#a00b4fd6880cebfab3fd8a42a79dc0290cdddca9"
-  integrity sha512-bBblIStwpHmoS281JFIVqeimcN3LhpoP5YKDWzxQdBIUP8S2xPvHDgizLDhUq2ScguLfVPmwfF5y268EEQR60w==
-  dependencies:
-    ua-parser-js "^0.7.24"
-
 react-dom@^16.8.6:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
@@ -12090,11 +12082,6 @@ typedarray-to-buffer@3.1.5, typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
-
-ua-parser-js@^0.7.24:
-  version "0.7.28"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
-  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 ultron@~1.1.0:
   version "1.1.1"
