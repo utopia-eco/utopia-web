@@ -4,7 +4,7 @@ import TokenContext from 'context/TokenContext'
 import { getBalanceAmount, round } from 'common/utils/numbers'
 import BigNumber from 'bignumber.js'
 
-const MarketNews = () => {
+const MarketInfo = () => {
     const tokenContext = useContext(TokenContext)
     const [twentyFourHourVolume, setTwentyFourHourVolume] = useState('$-')
     const [twentyFourHourTransactions, setTwentyFourHourTransactions] = useState('-')
@@ -68,10 +68,15 @@ const MarketNews = () => {
     }, [tokenContext.currentlySelectedToken, tokenContext.currentlySelectedToken.address, tokenContext.currentTokenPriceInUSD])
 
     return (
-        <div className="market-history token-info">
-            <h3>TOKEN INFO</h3>
-
+        <div className="token-info">
             <div className="info-row">
+                <div className="selected-token">
+                    <img className="token-icon" src={tokenContext.currentlySelectedToken.logoURI} alt="token logo" />
+                    <div className="selected-token-info">
+                        <div>{`${tokenContext.currentlySelectedToken.name} (${tokenContext.currentlySelectedToken.symbol} / BNB)`}</div>
+                        <div className="green">{`$${!Number.isNaN(tokenContext.currentTokenPriceInUSD) ? tokenContext.currentTokenPriceInUSD : '-'}`}</div>
+                    </div>
+                </div>
                 <div className="info-stat">
                     <div className="info-header">24hr Volume</div>
                     <div className="info-value">{twentyFourHourVolume}</div>
@@ -80,9 +85,6 @@ const MarketNews = () => {
                     <div className="info-header">Transactions</div>
                     <div className="info-value">{twentyFourHourTransactions}</div>
                 </div>
-            </div>
-
-            <div className="info-row">
                 <div className="info-stat">
                     <div className="info-header">Liquidity</div>
                     <div className="info-value">{liquidity}</div>
@@ -96,4 +98,4 @@ const MarketNews = () => {
     )
 }
 
-export default MarketNews
+export default MarketInfo
