@@ -30,7 +30,7 @@
         "date-fns": "^2.24.0",
         "eslint-config-prettier": "^8.3.0",
         "ethers": "^5.4.7",
-        "firebase-admin": "^9.4.1",
+        "firebase-admin": "^10.3.0",
         "firebase-functions": "^3.11.0",
         "lodash": "^4.17.21",
         "net": "^1.0.2",
@@ -89,7 +89,7 @@
         "styled-components": "^5.2.1",
         "styled-system": "5.1.5",
         "swiper": "^6.4.11",
-        "web3": "1.6.1-rc.0",
+        "web3": "4.0.1",
         "web3-eth-contract": "1.6.1-rc.0",
         "web3modal": "^1.9.4",
         "worker-loader": "^3.0.8"
