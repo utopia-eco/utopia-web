@@ -82,7 +82,7 @@
         "redux-thunk": "^2.4.1",
         "sass": "^1.38.1",
         "slick-carousel": "^1.8.1",
-        "socket.io-client": "^4.2.0",
+        "socket.io-client": "^4.5.0",
         "sockjs": "^0.3.24",
         "sockjs-client": "^1.5.2",
         "stompjs": "^2.3.3",
